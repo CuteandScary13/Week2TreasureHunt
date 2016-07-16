@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	Rigidbody2D PlayerRB;
+	private Rigidbody2D PlayerRB;
 	// Use this for initialization
 	void Start () {
 		//Assign the player's rigid body to a variable
