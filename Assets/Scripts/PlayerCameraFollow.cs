@@ -6,6 +6,7 @@ public class PlayerCameraFollow : MonoBehaviour {
 	public Vector3 offset;
 	public int offsetUp;
 	public int offsetDown;
+	public float offsetSpeed;
 	void Update () {
 		Camera.main.transform.position = transform.position + offset;
 
@@ -17,11 +18,11 @@ public class PlayerCameraFollow : MonoBehaviour {
 		}
 		if (lastButtonPressed == 'S') {
 			if (offset.y < offsetDown == false) {
-				offset -= new Vector3 (0, 0.3f, 0);
+				offset -= new Vector3 (0, offsetSpeed , 0);
 			}
 		} else if (lastButtonPressed == 'W') {
 			if (offset.y > offsetUp == false) {
-				offset += new Vector3 (0, 0.3f, 0);
+				offset += new Vector3 (0, offsetSpeed, 0);
 			}
 		}
 	}
