@@ -20,7 +20,7 @@ public class GoUp : MonoBehaviour {
 			enableTextBox();
 			captureMessage.text = "Press [SPACE] to go up the stairs.";
 			if (Input.GetKey (KeyCode.Space)) {
-				player.position = new Vector3 (203, 3, 0);
+				player.position = new Vector3 (218, 54, 0);
 			}
 
 
