@@ -18,7 +18,7 @@ public class Treasure : MonoBehaviour {
 	void Update () {
 		if ((player.position - transform.position).magnitude < placementReference) {
 			enableTextBox();
-			captureMessage.text = "Press [SPACE] to get treasure and win!";
+			captureMessage.text = "Press [SPACE] to make the call!";
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				didPlayerWin = true;
 			}
@@ -29,7 +29,7 @@ public class Treasure : MonoBehaviour {
 		}
 		if (didPlayerWin) {
 			enableTextBox();
-			captureMessage.text = "YOU GOT THE TREASURE! YOU WIN!";
+			captureMessage.text = "Hey Grandma, I know we don't talk a lot but I just want to let you know that I love you. YOU FOUND THE PHONE AND CALLED YOUR GRANDMA! YOU WIN!";
 		}
 
 	

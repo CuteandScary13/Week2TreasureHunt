@@ -19,8 +19,8 @@ public class GoUp : MonoBehaviour {
 		if ((player.position - transform.position).magnitude < placementReference) {
 			enableTextBox();
 			captureMessage.text = "Press [SPACE] to go up the stairs.";
-			if (Input.GetKey (KeyCode.Space)) {
-				player.position = new Vector3 (218, 54, 0);
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				player.position = new Vector3 (218, 52, 1);
 			}
 
 
